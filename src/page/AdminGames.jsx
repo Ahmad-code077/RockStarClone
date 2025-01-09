@@ -1,6 +1,6 @@
 import { useState, useContext } from 'react';
 import GamesContext from '../context/GamesContext';
-import GameCard from '../component/GameCard';
+import GameCard from '../component/GameCardAdmin';
 import AddGameForm from '../component/AddGameForm'; // Import the AddGameForm component
 import UpdateGameForm from '../component/UpdateGameForm'; // Import the UpdateGameForm component
 
@@ -37,7 +37,7 @@ const AdminGames = () => {
       <AddGameForm addGame={addGame} />{' '}
       {/* Pass addGame as a prop to AddGameForm */}
       {/* Display list of games in grid format */}
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 my-12'>
         {games?.length > 0 ? (
           games.map((game) => (
             <GameCard

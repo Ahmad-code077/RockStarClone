@@ -2,16 +2,15 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 
 const UpdateGameForm = ({ game, handleUpdateGame, closeForm }) => {
-  console.log(game);
   const [updatedGame, setUpdatedGame] = useState({
     id: game.id,
     title: game.title,
     description: game.description,
     imageUrl: game.imageUrl,
     price: game.price,
+    link: game.link, // Add link to the state
   });
 
-  console.log('updatedGame', updatedGame);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setUpdatedGame((prev) => ({
@@ -71,6 +70,18 @@ const UpdateGameForm = ({ game, handleUpdateGame, closeForm }) => {
               type='text'
               name='price'
               value={updatedGame.price}
+              onChange={handleChange}
+              className='w-full p-2 border rounded'
+            />
+          </div>
+          <div className='mb-4'>
+            <label className='block text-sm font-semibold mb-2'>
+              Game Link
+            </label>
+            <input
+              type='text'
+              name='link'
+              value={updatedGame.link}
               onChange={handleChange}
               className='w-full p-2 border rounded'
             />

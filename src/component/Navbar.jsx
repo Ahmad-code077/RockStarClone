@@ -1,7 +1,38 @@
-import { IoMenuSharp } from 'react-icons/io5';
-import { links } from './Sidebar';
+import {
+  IoCallOutline,
+  IoLocationOutline,
+  IoMailOutline,
+  IoMenuSharp,
+} from 'react-icons/io5';
 import { Link } from 'react-router-dom';
 import { useGlobalContext } from '../context/context';
+export const linksData = [
+  { id: 1, link: 'Home', to: '/' },
+  { id: 2, link: 'Games', to: '/games' },
+  { id: 3, link: 'About', to: '/about' },
+  { id: 4, link: 'Dashbaord', to: '/admin' },
+];
+
+export const contact = [
+  {
+    id: 1,
+    icon: <IoCallOutline />,
+    label: 'Call Now',
+    detail: '+92320123243',
+  },
+  {
+    id: 2,
+    icon: <IoMailOutline />,
+    label: 'Send Email',
+    detail: 'ahmadeveloper077@gmail.com',
+  },
+  {
+    id: 3,
+    icon: <IoLocationOutline />,
+    label: 'Address',
+    detail: 'Pakistan',
+  },
+];
 
 const Navbar = () => {
   const { openSidebar } = useGlobalContext();
@@ -15,7 +46,7 @@ const Navbar = () => {
         </div>
         {/* Navigation Links */}
         <ul className='hidden lg:flex space-x-6'>
-          {links.map((item) => (
+          {linksData.map((item) => (
             <li key={item.id}>
               <Link
                 to={item.to}

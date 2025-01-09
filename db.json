@@ -5,28 +5,40 @@
       "title": "Grand Theft Auto V",
       "description": "Gta Vice City",
       "imageUrl": "https://images.ctfassets.net/wn7ipiv9ue5v/DGZx1qcmMVmmZ2GVBpZ6v/f82f6aa8de84663e723b191519da0200/V.jpeg?w=650&h=&fm=avif&q=75",
-      "price": "200"
+      "price": "200",
+      "link": "https://www.rockstargames.com/V"
     },
     {
       "id": "1736373711497",
       "title": "Grand Theft Auto: The Trilogy – The Definitive Edition",
       "description": "GTA",
       "imageUrl": "https://images.ctfassets.net/wn7ipiv9ue5v/3VyUVFFhqiCMMev2R6qyKk/81ea4b7c791bd182a21c73802ed57e73/GTAT_RockstarStore_FOB_1212x1497_Deliverable.jpg?w=650&h=&fm=avif&q=75",
-      "price": "5000"
+      "price": "5000",
+      "link": "https://www.rockstargames.com/trilogy"
     },
     {
       "id": "1736373803487",
       "title": "Buy Red Dead Redemption 2",
-      "description": "Red Dead ",
+      "description": "Red Dead",
       "imageUrl": "https://images.ctfassets.net/wn7ipiv9ue5v/461fAYkgtQzCBoK3ZUsNdH/9d9f124988e64c4427a94a99fc1922a4/RDR2_FOB_1212x1497.jpg?w=650&h=&fm=avif&q=75",
-      "price": "876"
+      "price": "876",
+      "link": "https://www.rockstargames.com/reddeadredemption2"
     },
     {
       "id": "1736373862764",
-      "title": "Red Dead Redemption ",
-      "description": "Redemption ",
+      "title": "Red Dead Redemption",
+      "description": "Redemption",
       "imageUrl": "https://images.ctfassets.net/wn7ipiv9ue5v/iwVKKuA326c3TDTLABdSb/963191b86b7f7e14a083c69c80063107/RSG_Store_RDRFOB_600x714_Deliv.jpg?w=650&h=&fm=avif&q=75",
-      "price": "678"
+      "price": "678",
+      "link": "https://www.rockstargames.com/reddeadredemption"
+    },
+    {
+      "id": "1736423883504",
+      "title": "Gamin Pc",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "imageUrl": "https://shutterstock.com/image-vector/power-play-dynamic-gaming-controller-260nw-2321548437.jpg",
+      "price": "17",
+      "link": "http://update.com"
     }
   ]
 }

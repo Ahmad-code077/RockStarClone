@@ -6,7 +6,8 @@ const AddGameForm = ({ addGame }) => {
     title: '',
     description: '',
     imageUrl: '',
-    price: '', // Add price to the state
+    price: '',
+    link: '', // Add link to the state
   });
 
   const handleAddGame = () => {
@@ -15,7 +16,8 @@ const AddGameForm = ({ addGame }) => {
       !newGame.title ||
       !newGame.description ||
       !newGame.imageUrl ||
-      !newGame.price
+      !newGame.price ||
+      !newGame.link
     ) {
       alert('Please fill in all fields'); // You can replace this with a more sophisticated error handling
       return; // Exit early if any field is empty
@@ -23,7 +25,13 @@ const AddGameForm = ({ addGame }) => {
 
     const game = { ...newGame, id: Date.now().toString() }; // Ensure ID is a string
     addGame(game);
-    setNewGame({ title: '', description: '', imageUrl: '', price: '' }); // Reset all fields
+    setNewGame({
+      title: '',
+      description: '',
+      imageUrl: '',
+      price: '',
+      link: '',
+    }); // Reset all fields
   };
 
   return (
@@ -58,6 +66,13 @@ const AddGameForm = ({ addGame }) => {
           placeholder='Price'
           value={newGame.price}
           onChange={(e) => setNewGame({ ...newGame, price: e.target.value })}
+          className='w-full p-4 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-yellow-500'
+        />
+        <input
+          type='url'
+          placeholder='Game Link'
+          value={newGame.link}
+          onChange={(e) => setNewGame({ ...newGame, link: e.target.value })}
           className='w-full p-4 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-yellow-500'
         />
         <button

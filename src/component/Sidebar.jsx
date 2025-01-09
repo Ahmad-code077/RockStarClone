@@ -1,45 +1,8 @@
-import {
-  IoCallOutline,
-  IoClose,
-  IoLocationOutline,
-  IoMailOutline,
-} from 'react-icons/io5';
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaTwitter,
-} from 'react-icons/fa';
+import { IoClose } from 'react-icons/io5';
+
 import { Link } from 'react-router-dom';
 import { useGlobalContext } from '../context/context';
-
-export const links = [
-  { id: 1, link: 'Home', to: '/' },
-  { id: 2, link: 'Plans', to: '/plans' },
-  { id: 3, link: 'Company', to: '/' },
-  { id: 4, link: 'Contacts', to: '/contact' },
-];
-
-export const contact = [
-  {
-    id: 1,
-    icon: <IoCallOutline />,
-    label: 'Call Now',
-    detail: '+92320123243',
-  },
-  {
-    id: 2,
-    icon: <IoMailOutline />,
-    label: 'Send Email',
-    detail: 'ahmadeveloper077@gmail.com',
-  },
-  {
-    id: 3,
-    icon: <IoLocationOutline />,
-    label: 'Address',
-    detail: 'Pakistan',
-  },
-];
+import { contact, linksData } from './Navbar';
 
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useGlobalContext();
@@ -58,7 +21,7 @@ const Sidebar = () => {
       </div>
       <nav className='mt-4'>
         <ul className='space-y-4'>
-          {links.map(({ id, link, to }) => (
+          {linksData.map(({ id, link, to }) => (
             <li key={id}>
               <Link
                 to={to}

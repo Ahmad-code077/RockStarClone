@@ -4,6 +4,9 @@ import Hero from './component/Hero';
 import CardContent from './component/CardContent';
 import GamesShowCase from './page/GamesShowCase';
 import AdminGames from './page/AdminGames';
+import AllGames from './page/AllGames';
+import SeeSingleGameCard from './page/SeeSingleGameCard';
+import About from './page/About';
 const routes = createBrowserRouter([
   {
     path: '/',
@@ -25,9 +28,21 @@ const routes = createBrowserRouter([
         path: '/admin',
         element: (
           <div className='max-w-6xl  mx-auto px-4'>
-            <AdminGames />,
+            <AdminGames />
           </div>
         ),
+      },
+      {
+        path: '/games',
+        element: <AllGames />,
+      },
+      {
+        path: '/games/:id',
+        element: <SeeSingleGameCard />,
+      },
+      {
+        path: '/about',
+        element: <About />,
       },
     ],
   },
