@@ -4,7 +4,7 @@ const Hero = () => {
       {/* Text Section */}
       <div className='flex flex-col justify-center items-center lg:items-start bg-black text-white p-8 lg:px-16 lg:w-1/2'>
         <div
-          className='bg-cover bg-center w-72 h-40 lg:w-96 lg:h-52 mb-4' // Adjusted the width and height of the image
+          className='bg-cover bg-center w-72 h-40 lg:w-96 lg:h-52 mb-4'
           style={{
             backgroundImage: `url('https://images.ctfassets.net/wn7ipiv9ue5v/7bGOD1mXbCis8iPT7cFXwC/a5fe01260f6900724f07385fb1a2aad1/RDR_Logo_1000x1000.svg?w=512&h=&fm=avif&q=75')`,
           }}
@@ -12,15 +12,6 @@ const Hero = () => {
         <p className='mt-4 text-3xl md:text-5xl lg:text-6xl font-extrabold'>
           RockstarHub
         </p>
-        {/* Uncomment the following section if you want to include Login and Register buttons */}
-        {/* <div className="flex gap-4 mt-4">
-          <Link className="btn py-2 md:py-3 lg:py-4" to={'/login'}>
-            <span>Login</span>
-          </Link>
-          <Link className="btn py-2 md:py-3 lg:py-4" to={'/register'}>
-            <span>Register</span>
-          </Link>
-        </div> */}
       </div>
 
       {/* Image Section */}

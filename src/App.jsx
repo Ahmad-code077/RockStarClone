@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import HomeMain from './layout/HomeMain';
 import Hero from './component/Hero';
 import CardContent from './component/CardContent';
+import Banner from './component/Banner';
 import GamesShowCase from './page/GamesShowCase';
 import AdminGames from './page/AdminGames';
 import AllGames from './page/AllGames';
@@ -21,6 +22,7 @@ const routes = createBrowserRouter([
               <CardContent />
               <GamesShowCase />
             </div>
+            <Banner />
           </>
         ),
       },
