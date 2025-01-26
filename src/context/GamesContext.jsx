@@ -107,7 +107,6 @@ export const GamesProvider = ({ children }) => {
         throw new Error(errorData.message || 'Failed to delete game');
       }
 
-      // If deletion is successful, update the state
       setGames((prevGames) => prevGames.filter((game) => game.id !== gameId));
       console.log('Game deleted successfully');
     } catch (error) {

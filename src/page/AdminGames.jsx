@@ -1,8 +1,8 @@
 import { useState, useContext } from 'react';
 import GamesContext from '../context/GamesContext';
 import GameCard from '../component/GameCardAdmin';
-import AddGameForm from '../component/AddGameForm'; // Import the AddGameForm component
-import UpdateGameForm from '../component/UpdateGameForm'; // Import the UpdateGameForm component
+import AddGameForm from '../component/AddGameForm';
+import UpdateGameForm from '../component/UpdateGameForm';
 
 const AdminGames = () => {
   const { games, addGame, updateGame, deleteGame } = useContext(GamesContext);
@@ -20,8 +20,7 @@ const AdminGames = () => {
   };
 
   const handleUpdateGame = (updatedGame) => {
-    // console.log('updated', updatedGame);
-    updateGame(updatedGame); // Pass updated game data
+    updateGame(updatedGame);
   };
 
   const handleDeleteGame = (gameId) => {
@@ -34,7 +33,7 @@ const AdminGames = () => {
         Featured Games
       </h2>
       {/* Add new game form */}
-      <AddGameForm addGame={addGame} />{' '}
+      <AddGameForm addGame={addGame} />
       {/* Pass addGame as a prop to AddGameForm */}
       {/* Display list of games in grid format */}
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 my-12'>

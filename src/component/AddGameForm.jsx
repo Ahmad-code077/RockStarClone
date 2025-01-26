@@ -7,7 +7,7 @@ const AddGameForm = ({ addGame }) => {
     description: '',
     imageUrl: '',
     price: '',
-    link: '', // Add link to the state
+    link: '',
   });
 
   const handleAddGame = () => {
@@ -19,8 +19,8 @@ const AddGameForm = ({ addGame }) => {
       !newGame.price ||
       !newGame.link
     ) {
-      alert('Please fill in all fields'); // You can replace this with a more sophisticated error handling
-      return; // Exit early if any field is empty
+      alert('Please fill in all fields');
+      return;
     }
 
     const game = { ...newGame, id: Date.now().toString() }; // Ensure ID is a string

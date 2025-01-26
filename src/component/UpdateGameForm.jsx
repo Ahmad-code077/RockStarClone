@@ -8,7 +8,7 @@ const UpdateGameForm = ({ game, handleUpdateGame, closeForm }) => {
     description: game.description,
     imageUrl: game.imageUrl,
     price: game.price,
-    link: game.link, // Add link to the state
+    link: game.link,
   });
 
   const handleChange = (e) => {

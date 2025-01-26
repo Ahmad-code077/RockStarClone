@@ -12,7 +12,7 @@ const Banner = () => {
         ></div>
         <p className='text-gray-300'>Essentials Collection Now Available</p>
         <a
-          href='' // add link here to this banner
+          href=''
           className='text-xl font-semibold border rounded px-6 py-2 mt-6'
         >
           Shop Now
